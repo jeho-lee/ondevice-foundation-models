@@ -1,0 +1,27 @@
+# Local upstream sources and model weights.
+third_party/
+checkpoints/
+
+# Generated deployment artifacts. Do not commit converted weights.
+exported_models/
+artifacts/
+workdir/
+
+# Python/CMake noise.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+cmake-build-*/
+
+# Large profiling traces generated locally.
+*.raw
+*.f16
+*.bin
+*.so
+*.onnx
+*.data
+chrometrace_*
+profile_*.json

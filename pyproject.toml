@@ -1,0 +1,26 @@
+[project]
+name = "ondevice-foundation-models"
+version = "0.1.0"
+description = "Script-only deployment recipes for running foundation models on mobile NPUs."
+requires-python = ">=3.10"
+dependencies = [
+  "huggingface_hub",
+  "numpy",
+  "onnx",
+  "onnxruntime",
+  "onnxsim",
+  "torch",
+]
+
+[tool.setuptools]
+
+[tool.setuptools.packages.find]
+include = [
+  "backends*",
+  "common*",
+  "converters*",
+  "graph_rewriters*",
+]
+
+[tool.ruff]
+line-length = 120

@@ -1,0 +1,4 @@
+model,variant,resolution,backend,precision,device,vtcm_mb,graph,latency_ms,notes
+depth-anything-3,small,504x504,qnn,fp16,s26,8,qkv_nr_hs_hl_lsfold_featclean_rank3,25.465,default
+depth-anything-3,base,504x504,qnn,fp16,s26,8,qkv_nr_hs_hl_lsfold_featclean_rank3,61.094,default
+depth-anything-3,large,504x504,qnn,fp16,s26,8,qkv_nr_hs_hl_lsfold_featclean_rank3,181.561,default

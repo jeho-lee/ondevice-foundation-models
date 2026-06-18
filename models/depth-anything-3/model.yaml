@@ -1,0 +1,30 @@
+name: depth-anything-3
+task: monocular-relative-depth
+upstream:
+  github: https://github.com/DepthAnything/Depth-Anything-3
+  license: Apache-2.0
+  huggingface:
+    small: depth-anything/DA3-SMALL
+    base: depth-anything/DA3-BASE
+    large: depth-anything/DA3-LARGE-1.1
+local_paths:
+  source: third_party/Depth-Anything-3
+  checkpoints: checkpoints/depth-anything-3
+  onnx: exported_models/onnx/depth-anything-3
+  qnn: exported_models/qnn/depth-anything-3
+supported:
+  variants: [small, base, large]
+  resolutions: [504]
+  default_resolution: 504
+  backend: qnn
+  precision: fp16
+default_graph_rewrite:
+  passes:
+    - cleanup
+    - pre_qkv_explode_no_rope
+    - head_split
+    - head_linear
+    - layer_scale_fold
+    - feature_concat_slice_cleanup
+    - feature_rank3_cleanup
+  suffix: qkv_nr_hs_hl_lsfold_featclean_rank3
