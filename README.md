@@ -62,3 +62,12 @@ Do not commit or upload generated model artifacts. In particular, exclude:
 - raw calibration/input/output tensors
 
 The generated directories and file patterns are blocked by `.gitignore`.
+
+## License
+
+The code in this repository is licensed under Apache-2.0. See [LICENSE](LICENSE)
+and [NOTICE](NOTICE).
+
+Model checkpoints, upstream repositories, and generated deployment artifacts are
+not redistributed by this repository. They are governed by their respective
+upstream licenses.

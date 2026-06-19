@@ -1,0 +1,14 @@
+ondevice-foundation-models
+Copyright 2026 Jeho Lee
+
+This repository provides conversion, graph rewriting, backend deployment, and
+profiling scripts for on-device foundation model experiments.
+
+This repository does not redistribute upstream model checkpoints, converted
+ONNX files, QNN model libraries, QNN context binaries, or other generated model
+artifacts. Users must obtain model weights from the official upstream sources
+and comply with each model's license.
+
+Depth Anything 3 is developed by its respective authors and is referenced via
+its official GitHub and Hugging Face repositories. Model names, trademarks,
+checkpoints, and upstream source code belong to their respective owners.

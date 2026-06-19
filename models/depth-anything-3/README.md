@@ -2,6 +2,8 @@
 
 Depth Anything 3 (DA3) is included as a script-only deployment recipe. This
 repo does not redistribute DA3 checkpoints or converted ONNX/QNN artifacts.
+Users must obtain DA3 weights from the official upstream sources and comply
+with the upstream DA3 license.
 
 ## Supported Variants
 
@@ -51,3 +53,10 @@ cleanup,pre_qkv_explode_no_rope,head_split,head_linear,layer_scale_fold,feature_
 
 These values are QNN HTP optrace `Time (us)` values measured on an S26-class
 target with VTCM 8 MB.
+
+## License
+
+The deployment scripts in this repository are licensed under Apache-2.0. Depth
+Anything 3 checkpoints, source code, model names, and generated derivative
+artifacts are governed by the upstream DA3 license and are not redistributed
+here.
